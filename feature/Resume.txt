@@ -1,0 +1,5 @@
+Senior Software Engineer with 8+ years of experience in Configuration Management.
+Skilled in Jenkins, VMware, Perforce, Linux, Python. Entry Level knowledge of Docker, AWS, Ansible.
+Responsible for Designing, Implementing and Supporting fully automated CI/CD processes in large scale Cloud
+environments consisting of more than 2,000 VMS and thousands of Jenkins jobs.
+Winner of Several State and National Level C/C++ competitions during graduation
