@@ -1,5 +1,13 @@
+def PrintHelloWorld()
+{
+	echo "Hello World"
+}
 pipeline
 {
+	parameters
+	{
+		
+	}
 	agent any
 	stages
 	{
@@ -8,6 +16,14 @@ pipeline
 			steps
 			{
 				echo "Hi Amol"
+			}
+		}
+		stage('Sleep_Stage')
+		{
+			steps
+			{
+				sleep(time:30,unit:"SECONDS")
+				PrintHelloWorld()
 			}
 		}
 	}
