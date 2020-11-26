@@ -35,8 +35,8 @@ pipeline
 			{
 				input
 				{
-					message "Should we proceed?"
-					ok "Yes, we should"					
+					message "Should we continue?"
+                			ok "Yes, we should."					
 				}
 				echo "${params.Name}"
 				echo "${env.BUILD_ID}"
