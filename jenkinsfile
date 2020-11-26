@@ -6,7 +6,7 @@ pipeline
 {
 	parameters
 	{
-		
+		string(name: 'Name', defaultValue: 'Amol', description: '') 	
 	}
 	agent any
 	stages
