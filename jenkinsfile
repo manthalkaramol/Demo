@@ -4,9 +4,11 @@ def PrintHelloWorld()
 }
 pipeline
 {
-	parameters
-	{
-		string(name: 'Name', defaultValue: 'Amol', description: '') 	
+	parameters { string(name: 'Name', defaultValue: 'Amol', description: '') }
+	options 
+	{ 
+		timestamps() 
+		timeout(time: 1, unit: 'MINUTES')
 	}
 	agent any
 	stages
@@ -20,6 +22,7 @@ pipeline
 		}
 		stage('Sleep_Stage')
 		{
+			options { timeout(time: 15, unit: 'SECONDS') }
 			steps
 			{
 				sleep(time:10,unit:"SECONDS")
