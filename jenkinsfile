@@ -22,7 +22,7 @@ pipeline
 		}
 		stage('Sleep_Stage')
 		{
-			options { timeout(time: 15, unit: 'SECONDS') }
+			options { timeout(time: 9, unit: 'SECONDS') }
 			steps
 			{
 				sleep(time:10,unit:"SECONDS")
