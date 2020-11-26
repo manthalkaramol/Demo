@@ -31,13 +31,13 @@ pipeline
 		}
 		stage('Parameter_Stage')
 		{
-			steps
+			input
 			{
-				input
-				{
-					message "Should we continue?"
-                			ok "Yes, we should."					
-				}
+				message "Should we continue?"
+                		ok "Yes, we should."					
+			}
+			steps
+			{	
 				echo "${params.Name}"
 				echo "${env.BUILD_ID}"
 			}
