@@ -10,6 +10,10 @@ pipeline
 		timestamps() 
 		timeout(time: 1, unit: 'MINUTES')
 	}
+	environment
+	{
+		LOCAL_USER='Amol'
+	}
 	agent any
 	stages
 	{
@@ -19,8 +23,7 @@ pipeline
 			{
 				echo "Hi Amol"
 				sh "pwd"
-				sh "sudo chmod +x ./Hello.sh"
-				sh "./Hello.sh"
+				//sh "./Hello.sh" permission issue
 			}
 		}
 		stage('Sleep_Stage')
@@ -43,6 +46,9 @@ pipeline
 			{	
 				echo "${params.Name}"
 				echo "${env.BUILD_ID}"
+				echo "env LOCAL_USER is ${env.LOCAL_USER}"
+				echo "env GLOBAL_USER is ${env.GLOBAL_USER}"
+				
 			}
 		}
 	}
