@@ -19,6 +19,7 @@ pipeline
 			{
 				echo "Hi Amol"
 				sh "pwd"
+				sh "sudo chmod +x ./Hello.sh"
 				sh "./Hello.sh"
 			}
 		}
