@@ -18,6 +18,7 @@ pipeline
 			steps
 			{
 				echo "Hi Amol"
+				sh Hello.sh
 			}
 		}
 		stage('Sleep_Stage')
