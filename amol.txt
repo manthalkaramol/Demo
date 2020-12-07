@@ -1,2 +1,7 @@
 Welcome to Amol Manthalkar's Repo.
+<<<<<<< HEAD
 Made changes locally and delete one above line
+=======
+Adding new line in between already existing 2 lines
+Working as Senior Software Engineer working with NortonLifeLock.
+>>>>>>> 74af6a188460f42fcacc44c1c738a43b4c7b2b09
